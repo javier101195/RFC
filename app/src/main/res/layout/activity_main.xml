@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/EditTextNombre"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:inputType="textUri" />
+
+    <TextView android:id="@+id/textViewApellidoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido \nPaterno:"
+        android:layout_alignTop="@+id/EditTextApellidoP" />
+
+    <EditText android:id="@+id/EditTextApellidoP"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:inputType="textUri"
+        android:layout_alignStart="@+id/EditTextNombre" />
+
+    <TextView android:id="@+id/textViewApellidoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido \nMaterno:"
+        android:layout_alignTop="@+id/EditTextApellidoM" />
+
+    <EditText android:id="@+id/EditTextApellidoM"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/EditTextNombre" />
+
+    <TextView android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha \nNacimiento:"
+        android:layout_alignTop="@+id/EditTextFecha" />
+
+    <EditText
+        android:id="@+id/EditTextFecha"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/EditTextNombre"
+        android:layout_marginTop="205dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewHomonima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/EditTextHomonima"
+        android:text="Homonomia:" />
+
+    <EditText android:id="@+id/EditTextHomonima"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/EditTextNombre" />
+
+    <TextView android:id="@+id/textViewRfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFC:"
+        android:layout_alignTop="@+id/EditTextRfc" />
+
+    <EditText android:textColor="@android:color/white"
+        android:id="@+id/EditTextRfc"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/EditTextNombre" />
+
+    <Button android:id="@+id/ButtonMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar RFC"
+        android:layout_alignParentBottom="true" />
+
+    <Button android:id="@+id/ButtonLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
